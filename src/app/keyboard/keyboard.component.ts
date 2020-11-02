@@ -32,6 +32,10 @@ export class KeyboardComponent implements OnInit {
     console.log(this.password);
   }
 
+  cancel = () => {
+    this.password = "";
+  }
+
   /**
    * Mélange la liste de nombre de manière aléatoire
    * @param tab 
