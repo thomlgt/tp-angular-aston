@@ -1,9 +1,15 @@
-<div>
-    <button *ngFor="let nbr of numbers" class="btn btn-danger" [value]="nbr" (click)="addNumber($event)">{{nbr}}</button>
+<!-- CLAVIER VIRTUEL -->
+<div class="keyboard">
+    <button *ngFor="let nbr of numbers; let i = index" class="btn-danger col-md-3" [value]="nbr" (click)="addNumber($event)">
+        {{nbr}}
+    </button>
 </div>
+
+<!-- CASE DESACTIVEE QUI AFFICHE LE PWD-->
 <div>
     <input type="password" [value]="password" disabled>
 </div>
+<!-- BTN VALIDER-->
 <div>
     <button (click)="submit()" class="btn btn-success">Valider</button>
 </div>
