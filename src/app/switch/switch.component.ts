@@ -14,6 +14,9 @@ export class SwitchComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * Affiche true ou false selon la position du bouton switch
+   */
   changeBool = () => {
     if(this.isOn) {
       this.isOn = false;

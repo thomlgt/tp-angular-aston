@@ -28,7 +28,7 @@ export class CarouselComponent implements OnInit {
   }
 
   /**
-   * Change l'image toutes les 3secondes
+   * Appelle la méthode pour changer d'image toutes les 3sec
    */
   updateImg = () =>  {
     setInterval(() => {

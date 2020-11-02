@@ -1,1 +1,10 @@
-<p>keyboard works!</p>
+<div>
+    <button *ngFor="let nbr of numbers" class="btn btn-danger" [value]="nbr" (click)="addNumber($event)">{{nbr}}</button>
+</div>
+<div>
+    <input type="password" [value]="password" disabled>
+</div>
+<div>
+    <button (click)="submit()" class="btn btn-success">Valider</button>
+</div>
+
