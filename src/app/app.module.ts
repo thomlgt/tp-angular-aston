@@ -8,12 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { KeyboardComponent } from './keyboard/keyboard.component';
 import { MorpionComponent } from './morpion/morpion.component';
-import { BadgesComponent } from './juve/badges/badges.component';
-import { ImagesComponent } from './juve/images/images.component';
-import { OptionsComponent } from './juve/options/options.component';
-import { PriceComponent } from './juve/price/price.component';
-import { QuantityComponent } from './juve/quantity/quantity.component';
-import { JuveComponent } from './juve/juve/juve.component';
+import { JuveModule } from './juve/juve.module';
 
 @NgModule({
   declarations: [
@@ -23,16 +18,11 @@ import { JuveComponent } from './juve/juve/juve.component';
     CarouselComponent,
     KeyboardComponent,
     MorpionComponent,
-    BadgesComponent,
-    ImagesComponent,
-    OptionsComponent,
-    PriceComponent,
-    QuantityComponent,
-    JuveComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    JuveModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,2 +1,6 @@
-<img [src]="currentImg" class="tall">
-<img *ngFor="let image of images" [src]="image" [value]="image" class="small" (click)="changeCurrentImg($event)">
+<div id="photoArea">
+    <img [src]="currentImg" />
+    <div id="thumbs">
+        <img *ngFor="let image of images" [src]="image" (click)="changeImg($event)"/>
+    </div>
+</div>

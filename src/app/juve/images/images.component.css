@@ -1,7 +1,12 @@
-.small {
-    width : 25%;
+#photoArea img {
+    width: 500px
 }
 
-.tall {
-    width : 100%;
+#photoArea #thumbs img {
+    width: 75px
+}
+
+#photoArea, #settingsArea {
+    float: left;
+    padding: 4px
 }

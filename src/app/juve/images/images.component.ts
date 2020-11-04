@@ -14,15 +14,15 @@ export class ImagesComponent implements OnInit {
     "../../../assets/images/4.jpg"
   ]
 
-  currentImg = "../../../assets/images/1.jpg";
+  currentImg = "../../../assets/images/1.jpg"
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  changeCurrentImg(image) {
-    this.currentImg = image.target.value;
+  changeImg(image) {
+    this.currentImg = image.target.src;
   }
 
 }
